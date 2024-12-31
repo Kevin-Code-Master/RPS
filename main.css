@@ -4,3 +4,104 @@
     box-sizing: border-box;
     font-size: 100%;
 }
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+main{
+    width: 80%;
+    height: 75vh;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+header,footer{
+    height: 10vh;
+    width: 80%;
+    background-color: purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+h1{
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#scissor {
+    width: 2rem;
+    height: 2rem;
+}
+
+#setUpSection {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    border-bottom: 2px solid white;
+}
+#setUpSection input {
+    padding: 0.3rem;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-left: 5px;
+    background-color: aqua;
+}
+#name {
+    margin-right: 5px;
+}
+/* For rounds input */
+#round {
+    width: 5%;
+    text-align: center;
+}
+/* Reset btn */
+#reset{
+    width: 10%;
+    outline: none;
+    border: 1px solid white;
+    padding: 0.3rem;
+    border-radius: 5px;
+    margin-left: 10px;
+    background-color: rgba(255, 0, 0, 0.757);
+    color: white;
+}
+/* playing section container */
+
+#playingSection {
+    width: 80%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Player and Computer containers */
+#playerContainer, #computerContainer {
+    width: 80%;
+    height: 90%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin: 2px;
+}
+#playerNameContainer,#computerNameContainer {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+    border-bottom: 1px solid white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

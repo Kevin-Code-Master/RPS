@@ -7,9 +7,35 @@
     <link rel="stylesheet" href="main.css">
     <!-- Adding the link to the favicon below here -->
      <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
-    <script src="main.js" defer></script>
+    <script src="/main.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <h1>ROCK <span><img src="/images/scissor.png" alt="Scissor PNG" id="scissor"></span> PAPER</h1>
+    </header>
+    <main>
+        <div id="setUpSection">
+            <label for="name">Enter Name:</label>
+            <input type="text" name="name" id="name">
+            <label for="round">Enter Rounds:</label>
+            <input type="text" name="round" id="round">
+            <button type="reset" id="reset">Reset</button>
+        </div>
+        <div id="playingSection">
+            <div id="playerContainer">
+                <div id="playerNameContainer">
+                    <h2 id="playerName"></h2>
+                </div>
+            </div>
+            <div id="computerContainer">
+                <div id="computerNameContainer">
+                    <h2>Computer</h2>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
