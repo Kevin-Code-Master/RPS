@@ -16,22 +16,40 @@
     <main>
         <div id="setUpSection">
             <label for="name">Enter Name:</label>
-            <input type="text" name="name" id="name">
-            <label for="round">Enter Rounds:</label>
-            <input type="text" name="round" id="round">
+            <input type="text" name="playerNameInput" id="playerNameInput" required autocomplete="off">
+            <label for="roundsToPlay">Enter Rounds:</label>
+            <input type="number" name="roundsToPlay" id="roundsToPlay" min="0" placeholder="0" required>
+            <button type ="button" id="enter">Enter</button>
             <button type="reset" id="reset">Reset</button>
         </div>
         <div id="playingSection">
             <div id="playerContainer">
                 <div id="playerNameContainer">
-                    <h2 id="playerName"></h2>
+                    <h2 id="playerName">Player 1</h2>
+                    <div id="playerScore">0</div>
+                </div>
+                <div id="icons-player">
+                    <img src="/images/scissors.png" alt="scissors" id="scissors2">
+                    <img src="/images/paper.png" alt="paper" id="paper2">
+                    <img src="/images/rock.png" alt="rock" id="rock2">
                 </div>
             </div>
             <div id="computerContainer">
                 <div id="computerNameContainer">
                     <h2>Computer</h2>
+                    <div id="computerScore">0</div>
+                </div>
+                <div id="icons-computer">
+                    <img src="/images/scissors.png" alt="scissors" id="scissors">
+                    <img src="/images/paper.png" alt="paper" id="paper">
+                    <img src="/images/rock.png" alt="rock" id="rock">
                 </div>
             </div>
+        </div>
+        <div id="playerBtns">
+            <button type="button" id="rockbtn">Rock</button>
+            <button type="button" id="paperbtn">Paper</button>
+            <button type="button" id="scissorbtn">Scissor</button>
         </div>
     </main>
     <footer>
