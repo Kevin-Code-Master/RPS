@@ -26,7 +26,7 @@
             <div id="playerContainer">
                 <div id="playerNameContainer">
                     <h2 id="playerName">Player 1</h2>
-                    <div id="playerScore">0</div>
+                    <div id="playerScoreDisplay">0</div>
                 </div>
                 <div id="icons-player">
                     <img src="/images/scissors.png" alt="scissors" id="scissors2">
@@ -37,13 +37,23 @@
             <div id="computerContainer">
                 <div id="computerNameContainer">
                     <h2>Computer</h2>
-                    <div id="computerScore">0</div>
+                    <div id="computerScoreDisplay">0</div>
                 </div>
                 <div id="icons-computer">
                     <img src="/images/scissors.png" alt="scissors" id="scissors">
                     <img src="/images/paper.png" alt="paper" id="paper">
                     <img src="/images/rock.png" alt="rock" id="rock">
                 </div>
+            </div>
+        </div>
+        <div id="resultsContainer">
+            <div id= "rounds">
+                <label for="roundsPlayed">Rounds:</label>
+                <input type="text" id="roundsPlayed" name="roundsPlayed" readonly>
+            </div>
+            <div id="finalResult">
+                <label for="outcome">Results:</label>
+                <input type="text" id="outcome" name="outcome" readonly>
             </div>
         </div>
         <div id="playerBtns">
